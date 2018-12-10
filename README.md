@@ -1,2 +1,2 @@
 # ConsultX
-Sistema de Informacion de Gestion en el condominio ConsultX
+Sistema de Informacion para la Gestion de visitas, areas, y reservas en el condominio ConsultX
