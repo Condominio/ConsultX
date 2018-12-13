@@ -7,12 +7,14 @@ from apps.Administrar_Visitas.models import Propietario,Visitante,Visita
 # -------PROPIETARIO--------------
 class ProAdmin(admin.ModelAdmin):
     list_display = ('Nro_Habitacion', 'Nombre', 'Apellido')
+    search_fields = ['Nombre', 'Apellido']#BUSCADOR
 admin.site.register(Propietario, ProAdmin)
 
 
 # -------VISITANTE------------------
 class VisitAdmin(admin.ModelAdmin):
     list_display = ('C_I','Nombre','Apellido')
+    search_fields = ['C_I','Nombre','Apellido'] # BUSCADOR
 admin.site.register(Visitante,VisitAdmin)
 
 # -------VISITAS------------------

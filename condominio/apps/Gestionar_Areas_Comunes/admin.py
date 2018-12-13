@@ -7,11 +7,13 @@ from apps.Gestionar_Areas_Comunes.models import Area,Asignar_Horarios_para_Reser
 #-------LISTAR LA TABLA SUB-AREA---------------
 class SubAreAdmin(admin.ModelAdmin):
     list_display = ('Nombre','Nro_SubÁrea')
+    search_fields = ['Nombre']  # BUSCADOR
 admin.site.register(SubArea,SubAreAdmin)
 
 #-------LISTAR LA TABLA AREA---------------
 class AreAdmin(admin.ModelAdmin):
     list_display = ('Nombre','sub_area')
+    search_fields = ['Nombre']  # BUSCADOR
 admin.site.register(Area,AreAdmin)
 
 
