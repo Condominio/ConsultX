@@ -1,4 +1,6 @@
 #from django.contrib.gis.gdal.prototypes.raster import auto_create_warped_vrt
+from builtins import set
+
 from django.db import models
 
 
@@ -28,8 +30,8 @@ class Visitante(models.Model):
 
 
     def lista(self):
-        cadena="{0} {1}"
-        return cadena.format(self.Nombre,self.Apellido)
+        cadena="{0} - {1} {2}"
+        return cadena.format(self.C_I,self.Nombre,self.Apellido)
 
     def __str__(self):
         return self.lista()
